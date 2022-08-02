@@ -1,0 +1,5 @@
+.footer-info__text {
+    @include footer-info_text;
+    grid-column: 2;
+    grid-row: 1;
+}

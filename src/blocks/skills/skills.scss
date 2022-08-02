@@ -5,6 +5,9 @@
     align-items: center;
     gap: 0 30px;
     grid-row: 1;
-    width: 100%;
+    width: 80%;
     max-width: calc($widthPage - $widthEdgePage - $widthEdgePage);
+    @media screen and (max-width: 1280px) and (min-width: 768px) {
+        max-width: calc($widthPage - $widthEdgePage - $widthEdgePage - 550px);
+    }
 }

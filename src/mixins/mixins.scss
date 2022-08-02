@@ -1,3 +1,9 @@
+/* Миксин для отступов для краев страницы */
+@mixin page-edge {
+    display: grid;
+    grid-template-columns: 1fr minmax(min-content, 1250px) 1fr;
+    align-items: center;
+}
 /* Миксин текста сслыок меню */
 @mixin menu-link {
     font-weight: 400;
@@ -26,13 +32,13 @@
     margin: 0 21px 0 0;
     &:hover {
         background: $colorHover;
-        color: #FFFFFF;
         outline: none;
+        box-shadow: none;
     }
     &:active {
         background: $colorHover;
+        box-shadow: none;
         outline: none;
-        color: #FFFFFF;
     }
 }
 /* Миксины заголовка сексии */
@@ -42,15 +48,22 @@
     line-height: 56px;
     color: $colorTitle;
     margin: 0;
+    @media screen and (max-width: 1280px) and (min-width: 768px) {
+        justify-self: center;
+        margin: 0 20px 0 0;
+    }
 }
 /* Миксин карточки */
 @mixin card-item {
+    width: 100%;
+    max-width: 255px;
     height: 445.87px;
     background: #FFFFFF;
     padding: 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 /* Миксин размер изображения первой секции */
 @mixin card-item__image {
@@ -116,7 +129,45 @@
     font-size: 20px;
     cursor: pointer;
     grid-row: 3;
-
+    height: 25px;
     justify-self: center;
     grid-column: 2;
+    align-self: center;
+    box-shadow: none;
+    transition: ease 0.5s;
+    &:hover {
+        color: $colorHover;
+    }
+    &:active {
+        color: $colorHover;
+        background: transparent;
+
+    }
+}
+/* Миксин текста footer */
+@mixin footer-info_text {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFFFF;
+    margin: 0;
+}
+/* Миксин ссылки в Footer */
+@mixin footer-info__link {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: ease 0.5s;
+    &:hover {
+        color: $colorHover;
+    }
+}
+
+@mixin widthPage {
+    max-width: calc($widthPage - $widthEdgePage - $widthEdgePage);
+    @media screen and (max-width:1280px) and (min-width: 768px) {
+        max-width: calc($widthPage - $widthEdgePage - $widthEdgePage - 300px);
+    }
 }

@@ -1,4 +1,3 @@
 .page {
-   display: grid;
-   grid-template-columns: 1fr minmax(min-content, calc($widthPage - $widthEdgePage - $widthEdgePage)) 1fr;
+   @include page-edge;
 }

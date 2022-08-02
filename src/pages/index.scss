@@ -35,8 +35,12 @@
 @import '../blocks/section-two/__button-swiper/section-two__button-swiper.scss';
 @import '../blocks/section-two/__button-swiper/section-two__button-swiper_prev.scss';
 @import '../blocks/section-two/__button-swiper/section-two__button-swiper_next.scss';
-@import 'swiper/css';
-@import 'swiper/css/pagination';
+@import '../blocks/section-two-pagination/section-two-pagination.scss';
+@import '../blocks/section-two-pagination/__bullet/section-two-pagination__bullet.scss';
+@import '../blocks/section-two-pagination/__bullet/section-two-pagination__bullet_active.scss';
+@import '../blocks/footer-info/footer-info.scss';
+@import '../blocks/footer-info/__text/footer-info__text.scss';
+@import '../blocks/footer-info/__link/footer-info__link.scss';
 body {
     width: 100%;
     max-width: $widthPage;

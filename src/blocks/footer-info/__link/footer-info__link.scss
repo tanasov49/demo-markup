@@ -1,0 +1,6 @@
+.footer-info__link {
+    @include footer-info__link;
+    grid-column: 2;
+    grid-row: 1;
+    justify-self: end;
+}

@@ -6,7 +6,7 @@ const swiper = new Swiper('.section-swiper', {
   spaceBetween: 30,
   slidesPerGroup: 3,
     pagination: {
-        el: '.swiper-pagination',
+        el: '.section-two-pagination',
         clickable: true,
       },
     
