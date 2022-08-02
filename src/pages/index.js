@@ -1,14 +1,19 @@
 import './index.scss';
-import Swiper from 'swiper';
-const swiper = new Swiper('.swiper', {
+import Swiper, { Navigation, Pagination } from 'swiper';
+Swiper.use([Navigation, Pagination]);
+const swiper = new Swiper('.section-swiper', {
+  slidesPerView: 3,
+  spaceBetween: 30,
+  slidesPerGroup: 3,
     pagination: {
         el: '.swiper-pagination',
+        clickable: true,
       },
     
       // Navigation arrows
       navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+        nextEl: '.section-two__button-swiper_next',
+        prevEl: '.section-two__button-swiper_prev',
       },
     
 });

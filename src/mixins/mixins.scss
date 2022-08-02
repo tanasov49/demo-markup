@@ -98,6 +98,10 @@
     min-height: 140px;
     border-radius: 5px;
     max-width: 285px;
+    flex-shrink: 0;
+    height: 100%;
+    position: relative;
+    transition-property: transform;
 }
 /* Миксин заголовка скила */
 @mixin skill-item__title {
@@ -108,6 +112,11 @@
     margin: 10px 0 0 30px;
 }
 /* Миксин кнопки */
-@mixin section-swiper__button {
-    
+@mixin section-two__button-swiper {
+    font-size: 20px;
+    cursor: pointer;
+    grid-row: 3;
+
+    justify-self: center;
+    grid-column: 2;
 }
