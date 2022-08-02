@@ -1,0 +1,113 @@
+/* Миксин текста сслыок меню */
+@mixin menu-link {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: $colorPage;
+    transition: ease 0.5s;
+    margin: 0;
+    text-decoration: none;
+
+    &:hover {
+        color: $colorHover;
+    }
+}
+/* Миксины кнопок header */
+@mixin button-page {
+    background: #FFFFFF;
+    transition: ease 0.5s;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: $colorPage;
+    border: none;
+    outline: 1px solid $colorPage;
+    margin: 0 21px 0 0;
+    &:hover {
+        background: $colorHover;
+        color: #FFFFFF;
+        outline: none;
+    }
+    &:active {
+        background: $colorHover;
+        outline: none;
+        color: #FFFFFF;
+    }
+}
+/* Миксины заголовка сексии */
+@mixin section-title {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 56px;
+    color: $colorTitle;
+    margin: 0;
+}
+/* Миксин карточки */
+@mixin card-item {
+    height: 445.87px;
+    background: #FFFFFF;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* Миксин размер изображения первой секции */
+@mixin card-item__image {
+    width: 255px;
+    height: 228.26px;
+    align-self: start;
+}
+/* Миксин заголовка карточки */
+@mixin card-item__title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: $colorTitle; 
+    margin: 23.37px 0 0 0;
+    max-width: 229px;
+    align-self: start;
+}
+/* Миксин текста даты */
+@mixin card-item__text-date {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    color: $colorPage;
+    margin: 10px 0 0 0;
+    align-self: start;
+}
+/* Миксин ссылки в карточке */
+@mixin card-item__link {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: $colorLink;
+    text-decoration: none;
+    align-self: stretch;
+    margin-top: auto;
+    transition: ease 0.5s;
+    &:hover {
+        color: $colorHover;
+    }
+}
+/* Миксин карточки скила */
+@mixin skill-item {
+    list-style-type: none;
+    background: #F2F2F2;
+    min-height: 140px;
+    border-radius: 5px;
+    max-width: 285px;
+}
+/* Миксин заголовка скила */
+@mixin skill-item__title {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    color: $colorTitle;
+    margin: 10px 0 0 30px;
+}
+/* Миксин кнопки */
+@mixin section-swiper__button {
+    
+}

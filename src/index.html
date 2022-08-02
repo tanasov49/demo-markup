@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo markup</title>
+</head>
+<body>
+    <div class="page">
+        <header class="header">
+            <img src="<%=require('./images/logo.png')%>" alt="Logo" class="logo logo_header">
+            <nav class="nav">
+                <ul class="nav-menu">
+                    <li class="menu-list">
+                        <a href="#" class="menu-list__link">Главная</a>
+                    </li>
+                    <li class="menu-list">
+                        <a href="#" class="menu-list__link">О нас</a>
+                    </li>
+                    <li class="menu-list">
+                        <a href="#" class="menu-list__link">Мероприятия</a>
+                    </li>
+                    <li class="menu-list">
+                        <a href="#" class="menu-list__link">Новости</a>
+                    </li>
+                </ul>
+                <button class="button-page button-page_useful"># Полезное</button>
+                <button class="button-page button-page_personal">Личный кабинет</button>
+            </nav>
+        </header>
+        <main class="main">
+            <section class="section-one">
+                <h1 class="section-title section-title_section-one">Заголовок</h1>
+                <button class="button-page button-page_section-one">Смотреть все мероприятия</button>
+                <ul class="cards">
+                    <li class="card-item">
+                        <img src="<%=require('./images/image19.jpg')%>" alt="Demo" class="card-item__image">
+                        <h4 class="card-item__title">Вебинар "Построение бизнес-модели стартапа"</h4>
+                        <p class="card-item__text-date">2 и 4 сентября, 17:30-19:45</p>
+                        <a href="#" class="card-item__link">Вебинар</a>
+                    </li>
+                    <li class="card-item">
+                        <img src="<%=require('./images/image19.jpg')%>" alt="Demo" class="card-item__image">
+                        <h4 class="card-item__title">Необходимые меры за 4 месяца до обязательной маркировки товаров легкой промышленности</h4>
+                        <p class="card-item__text-date">2 10 сентября, 11:00</p>
+                        <a href="#" class="card-item__link">Лекция</a>
+                    </li>
+                    <li class="card-item">
+                        <img src="<%=require('./images/image19.jpg')%>" alt="Demo" class="card-item__image">
+                        <h4 class="card-item__title">Вебинар "Customer Development. Инструмент по проверке гипотез о своем клиенте"</h4>
+                        <p class="card-item__text-date">11 сентября, 17:30-19:45</p>
+                        <a href="#" class="card-item__link">Вебинар</a>
+                    </li>
+                    <li class="card-item">
+                        <img src="<%=require('./images/image19.jpg')%>" alt="Demo" class="card-item__image">
+                        <h4 class="card-item__title">Выставка «Новые меры финансовой поддержки экспорта»
+                        </h4>
+                        <p class="card-item__text-date">10 сентября, 11:00</p>
+                        <a href="#" class="card-item__link">Вебинар</a>
+                    </li>
+                </ul>
+            </section>
+            <section class="section-two">
+                <h1 class="section-title section-title_section-two">Заголовок</h1>
+                <div class="section-swiper swiper">
+                    <div class="skills swiper-wrapper">
+                        <div class="skill-item swiper-slide">
+                            <img src="<%=require('./images/icon-1.svg')%>" alt="icon-1" class="skill-item__icon">
+                            <h4 class="skill-item__title">Бухгалтеры</h4>
+                        </div>
+                        <div class="skill-item swiper-slide">
+                            <img src="<%=require('./images/icon-2.svg')%>" alt="icon-2" class="skill-item__icon">
+                            <h4 class="skill-item__title">Репетиторы</h4>
+                        </div>
+                        <div class="skill-item swiper-slide">
+                            <img src="<%=require('./images/icon-3.svg')%>" alt="icon-3" class="skill-item__icon">
+                            <h4 class="skill-item__title">Программисты</h4>
+                        </div>
+                        <div class="skill-item swiper-slide">
+                            <img src="<%=require('./images/icon-4.svg')%>" alt="icon-4" class="skill-item__icon">
+                            <h4 class="skill-item__title">Няни и сиделки</h4>
+                        </div>
+                        <div class="skill-item swiper-slide">
+                            <img src="<%=require('./images/icon-4.svg')%>" alt="icon-4" class="skill-item__icon">
+                            <h4 class="skill-item__title">Няни и сиделки</h4>
+                        </div>
+                    </div>
+                    <div class="section-swiper__button-prev"></div>
+                    <div class="section-swiper__button-nex"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer"></footer>
+    </div>
+</body>
+</html>

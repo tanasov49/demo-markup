@@ -1,0 +1,16 @@
+.section-title_section-one {
+    padding: 60px 0 0 0;
+    grid-row: 1;
+    grid-column: 2;
+    position: relative;
+    &::after {
+        content: '';
+        position: absolute;
+        height: 4px;
+        width: 125.89px;
+        background-color: $colorHover;
+        z-index: 3;
+        bottom: -20px;
+        left: 0;
+    }
+}

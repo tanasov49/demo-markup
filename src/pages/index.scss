@@ -1,0 +1,42 @@
+
+@import '../vendor/normalize.scss';
+@import url(../fonts/fonts.scss);
+@import '../blocks/page/page.scss';
+@import '../blocks/header/header.scss';
+@import '../blocks/main/main.scss';
+@import '../blocks/footer/footer.scss';
+@import '../blocks/logo/logo.scss';
+@import '../blocks/logo/logo_header.scss';
+@import '../blocks/nav/nav.scss';
+@import '../blocks/nav-menu/nav-menu.scss';
+@import '../blocks/menu-list/menu-list.scss';
+@import '../blocks/menu-list/__link/menu-list__link.scss';
+@import '../blocks/button-page/button-page.scss';
+@import '../blocks/button-page/button-page_useful.scss';
+@import '../blocks/button-page/button-page_personal.scss';
+@import '../blocks/section-one/section-one.scss';
+@import '../blocks/section-title/section-title.scss';
+@import '../blocks/section-title/section-title_section-one.scss';
+@import '../blocks/button-page/button-page_section-one.scss';
+@import '../blocks/cards/cards.scss';
+@import '../blocks/card-item/card-item.scss';
+@import '../blocks/card-item/__image/card-item__image.scss';
+@import '../blocks/card-item/__title/card-item__title.scss';
+@import '../blocks/card-item/__text-date/card-item__text-date.scss';
+@import '../blocks/card-item/__link/card-item__link.scss';
+@import '../blocks/section-two/section-two.scss';
+@import '../blocks/section-title/section-title_section-two.scss';
+@import '../blocks/skills/skills.scss';
+@import '../blocks/skill-item/skill-item.scss';
+@import '../blocks/skill-item/skill-item__icon/skill-item__icon.scss';
+@import '../blocks/skill-item/__title/skill-item__title.scss';
+@import '../blocks/section-swiper/section-swiper.scss';
+@import 'swiper/css';
+@import 'swiper/css/pagination';
+@import '../blocks/section-swiper/__button-prev/section-swiper__button-prev.scss';
+body {
+    width: 100%;
+    max-width: $widthPage;
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+}

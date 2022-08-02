@@ -1,0 +1,6 @@
+.section-one {
+    display: grid;
+    grid-template-rows: minmax(min-content, max-content) 1fr;
+    grid-template-columns: 1fr minmax(min-content, calc($widthPage - $widthEdgePage - $widthEdgePage)) 1fr;
+    padding: 0 0 91.56px 0;
+}
