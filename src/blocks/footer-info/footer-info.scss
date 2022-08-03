@@ -1,4 +1,12 @@
 .footer-info {
     @include page-edge;
-    height: 60px;
+    min-height: 60px;
+    @media screen and (max-width: 768px) and (min-width: 320px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px 0;
+        padding: 20px 0;
+    }
 }

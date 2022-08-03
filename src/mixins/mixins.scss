@@ -13,9 +13,11 @@
     transition: ease 0.5s;
     margin: 0;
     text-decoration: none;
-
     &:hover {
         color: $colorHover;
+    }
+    @media screen and (max-width: 769px) {
+        font-size: 25px;
     }
 }
 /* Миксины кнопок header */
@@ -29,7 +31,6 @@
     color: $colorPage;
     border: none;
     outline: 1px solid $colorPage;
-    margin: 0 21px 0 0;
     &:hover {
         background: $colorHover;
         outline: none;
@@ -48,7 +49,7 @@
     line-height: 56px;
     color: $colorTitle;
     margin: 0;
-    @media screen and (max-width: 1280px) and (min-width: 768px) {
+    @media screen and (max-width: 1280px) and (min-width: 769px) {
         justify-self: center;
         margin: 0 20px 0 0;
     }
@@ -123,6 +124,9 @@
     line-height: 24px;
     color: $colorTitle;
     margin: 10px 0 0 30px;
+    @media screen and (max-width: 768px) and (min-width: 320px) {
+        margin: 10px 0 0 10px;
+    }
 }
 /* Миксин кнопки */
 @mixin section-two__button-swiper {
@@ -163,11 +167,14 @@
     &:hover {
         color: $colorHover;
     }
+    @media screen and (max-width: 768px) and (min-width: 320px) {
+        text-align: center;
+    }
 }
 
 @mixin widthPage {
     max-width: calc($widthPage - $widthEdgePage - $widthEdgePage);
-    @media screen and (max-width:1280px) and (min-width: 768px) {
+    @media screen and (max-width:1280px) and (min-width: 320px) {
         max-width: calc($widthPage - $widthEdgePage - $widthEdgePage - 300px);
     }
 }

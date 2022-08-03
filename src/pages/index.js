@@ -17,3 +17,9 @@ const swiper = new Swiper('.section-swiper', {
       },
     
 });
+const buttonMenu = document.querySelector('.menu-button');
+const nav = document.querySelector('.nav');
+buttonMenu.addEventListener('click', () => {
+    nav.classList.toggle('nav__active');
+    buttonMenu.classList.toggle('menu-button_active');
+})

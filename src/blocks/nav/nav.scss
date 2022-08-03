@@ -2,4 +2,18 @@
     display: flex;
     grid-column: 2;
     flex-wrap: wrap;
+    transition: .25s ease;
+    @media screen and (max-width: 768px) and (min-width: 320px) {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        gap: 80px;
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        top: 90px;
+        z-index: 5;
+        background: #FFFFFF;
+        padding: 20px;
+    }
 }

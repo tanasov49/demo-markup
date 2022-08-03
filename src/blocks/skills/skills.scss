@@ -7,7 +7,10 @@
     grid-row: 1;
     width: 80%;
     max-width: calc($widthPage - $widthEdgePage - $widthEdgePage);
-    @media screen and (max-width: 1280px) and (min-width: 768px) {
+    @media screen and (max-width: 1280px) and (min-width: 769px) {
         max-width: calc($widthPage - $widthEdgePage - $widthEdgePage - 550px);
+    }
+    @media screen and (max-width: 768px) and (min-width: 320px) {
+        max-width: calc($widthPage - $widthEdgePage - $widthEdgePage - 260vw);
     }
 }
