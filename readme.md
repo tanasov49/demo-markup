@@ -18,6 +18,6 @@
 Сайт адаптивен для всех разреший от 320 px до 1922 px (т.к. изначально ширина макета задана 1922px ее я вынес в переменную)
 
 * Ссылка на макет (https://www.figma.com/file/7tD0KqLJ9Z0z4KrEu6IGCK/Demo-markup-(Copy)-(Copy)?node-id=0%3A1)
-* Ссылка на сай gh-pages (https://tanasov49.github.io/purina/)
+* Ссылка на сай gh-pages (https://tanasov49.github.io/demo-markup/)
 
 
